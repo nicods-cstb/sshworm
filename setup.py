@@ -103,7 +103,7 @@ setup_boilerplate_helper = SetupBoilerplateHelper()
 
 setup(
     name=module_name,
-    version=setup_boilerplate_helper.version_from_git(module_root_path=module_root_path),
+    version=setup_boilerplate_helper.version_from_git(),
     # cmdclass=versioneer.get_cmdclass(),
     author=author,
     author_email=author_email,
