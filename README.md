@@ -1,6 +1,5 @@
 # sshworm
-Tunnel ssh with python but fast. Unlike sshtunnel. It's simple and nice
-
+Tunnel ssh with python : simple and fast
 
 ## Usage
 ```python
