@@ -1,10 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
+
 [project]
-name = "example_package_YOUR_USERNAME_HERE"
-version = "0.0.1"
+name = "sshworm"
+dynamic=["version"]
 authors = [
-  { name="Example Author", email="author@example.com" },
+  { name="Nicolas Delgado", email="nicolas.delgado@cstb.fr" },
 ]
-description = "A small example package"
+description = "ssh tunnel for python that uses openssh cli"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -14,5 +21,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/nicods-cstb/sshworm"
+"Bug Tracker" = "https://github.com/nicods-cstb/sshworm/issues"
