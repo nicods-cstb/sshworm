@@ -15,7 +15,8 @@ Tunnel ssh with python : simple and fast
 
         assert worm is not None
 
-         # to use pg services, create a pg_service.conf (https://www.postgresql.org/docs/current/libpq-pgservice.html)
+         # to use pg services, create a pg_service.conf file in HOME
+         # (https://www.postgresql.org/docs/current/libpq-pgservice.html)
         engine = sqlalchemy.create_engine(f"postgresql:///?service={pg_service}")
 
         with engine.connect() as conn:
